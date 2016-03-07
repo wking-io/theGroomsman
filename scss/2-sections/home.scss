@@ -1,5 +1,5 @@
 body {
-  background: #212121;
+  background: $bg-color;
 }
 
 .wrapper {
@@ -16,7 +16,7 @@ body {
 .secondary-text {
   color: #fff;
   font-size: 20px;
-  font-family: 'Droid sans', sans-serif;
+  font-family: $droid;
   font-weight: 400;
   margin: 0;
 }
@@ -31,52 +31,72 @@ body {
 }
 
 .primary-text {
-  color: #fff;
+  color: $text-color;
   font-size: 175px;
-  font-family: 'Oswald', sans-serif;
+  font-family: $oswald;
   margin: -20px 0;
 }
 
 input[type=text] {
-  border: #fff solid 2px;
+  border: $text-color solid 2px;
   background: transparent;
-  color: #fff;
+  color: $text-color;
   height: 56px;
   width: 48%;
   margin: 0 0 30px 0;
   padding-left: 15px;
-  font-family: 'droid sans', sans-serif;
+  font-family: $droid;
   font-size: 14px;
 
   &:focus {
-    border: #0649E2 solid 2px;
+    border: $primary-color solid 2px;
     box-shadow: none;
     outline: none;
   }
 }
 
 input[type=submit] {
-  color: #fff;
-  background: #0649E2;
-  border: #0649E2 solid 2px;
+  color: $text-color;
+  background: $btn-color;
+  border: $btn-color solid 2px;
   height: 56px;
   width: 100%;
   display: block;
   margin: 0 auto;
   font-size: 16px;
-  font-family: 'droid sans', sans-serif;
+  font-family: $droid;
   font-weight: 700;
 
   &:hover {
-    background: #0436A8;
-    border: #0436A8 solid 2px;
+    background: $btn-hover;
+    border: $btn-hover solid 2px;
   }
 }
 
-.text-name {
-  margin-right: px;
+@media (max-width: $M) {
+  .primary-text {
+    font-size: 110px;
+  }
+  .form {
+    width: 80%;
+  }
 }
 
-.text-answer {
-  margin-left: 5px;
+@media (max-width: $S) {
+  .primary-text {
+    font-size: 54px;
+    margin: 0;
+  }
+  .secondary-text {
+    font-size: 16px;
+  }
+  .form {
+    width: 80%;
+  }
+  input[type=text] {
+    width: 100%;
+  }
+  input[type=submit] {
+    font-size: 14px;
+  }
 }
