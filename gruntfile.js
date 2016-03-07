@@ -27,7 +27,8 @@ module.exports = function(grunt) {
     			},
     			files: {
       				"index.html": ["jadefiles/index.jade"],
-              "thank-you.html": ["jadefiles/thank-you.jade"]
+              "thank-you.html": ["jadefiles/thank-you.jade"],
+              "bestman.html": ["jadefiles/bestman.jade"]
     			}
   			}
 		},

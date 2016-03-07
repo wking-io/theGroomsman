@@ -66,8 +66,9 @@ input[type=submit] {
   font-size: 16px;
   font-family: $droid;
   font-weight: 700;
+  outline: none;
 
-  &:hover {
+  &:hover, &:focus {
     background: $btn-hover;
     border: $btn-hover solid 2px;
   }

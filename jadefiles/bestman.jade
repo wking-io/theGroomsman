@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    include ./head.jade
+  body
+    div.wrapper
+      p.secondary-text Your service as my
+      h1.primary-text BESTMAN
+      p.secondary-text is requested November 19, 2016
+
+      form.form(action="http://formspree.io/wkingcreative@gmail.com" method="POST")
+        input(type="text" name="name" placeholder="Enter your name")
+        input(type="text" name="answer" placeholder="Your answer")
+        input(type="hidden" name="_next" value="//golden-rule.github.io/theGroomsman/thank-you.html")
+        input(type="submit" value="SUBMIT YOUR ANSWER")
